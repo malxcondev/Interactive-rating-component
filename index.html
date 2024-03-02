@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon" />
+    <title>Interactive rating component - by malxcon</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="font-overpass bg-neutral-very-dark-blue">
+    <div class="grid place-content-center h-screen">
+      <!-- Primer Card -->
+      <div
+        class="first-card bg-neutral-dark-blue w-[400px] h-[400px] rounded-3xl p-7">
+        <div
+          class="rounded-full bg-neutral-medium-blue w-10 h-10 grid place-content-center">
+          <img src="./images/icon-star.svg" alt="" />
+        </div>
+        <h2 class="text-white font-bold text-3xl my-5">How did we do?</h2>
+        <p class="text-neutral-medium-grey mb-5">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div
+          class="flex justify-between items-center text-neutral-medium-grey mb-5">
+          <div class="flex flex-col items-center">
+            <button
+              class="rating w-12 h-12 bg-neutral-medium-blue rounded-full flex justify-center items-center font-bold hover:bg-primary-orange hover:text-white cursor-pointer active:bg-neutral-medium-grey">
+              1
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <button
+              class="rating w-12 h-12 bg-neutral-medium-blue rounded-full flex justify-center items-center font-bold hover:bg-primary-orange hover:text-white cursor-pointer active:bg-neutral-medium-grey">
+              2
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <button
+              class="rating w-12 h-12 bg-neutral-medium-blue rounded-full flex justify-center items-center font-bold hover:bg-primary-orange hover:text-white cursor-pointer active:bg-neutral-medium-grey">
+              3
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <button
+              class="rating w-12 h-12 bg-neutral-medium-blue rounded-full flex justify-center items-center font-bold hover:bg-primary-orange hover:text-white cursor-pointer active:bg-neutral-medium-grey">
+              4
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <button
+              class="rating w-12 h-12 bg-neutral-medium-blue rounded-full flex justify-center items-center font-bold hover:bg-primary-orange hover:text-white cursor-pointer active:bg-neutral-medium-grey">
+              5
+            </button>
+          </div>
+        </div>
+
+        <button
+          class="submit w-full bg-primary-orange text-white font-bold py-3 rounded-3xl tracking-widest hover:bg-white hover:text-primary-orange">
+          SUBMIT
+        </button>
+      </div>
+      <!-- Segundo Card -->
+      <div
+        class="card-thanks hidden bg-neutral-dark-blue w-[400px] h-[400px] rounded-3xl p-7 flex flex-col justify-center items-center">
+        <picture>
+          <img src="./images/illustration-thank-you.svg" alt="" />
+        </picture>
+        <div
+          class="bg-neutral-medium-blue rounded-3xl w-[calc(60%)] text-center my-7 flex items-center justify-center py-1">
+          <p class="text-info text-primary-orange">You selected 4 out of 5</p>
+        </div>
+        <h2 class="text-white font-bold text-3xl">Thank You!</h2>
+        <p class="text-neutral-medium-grey mb-5 text-center">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
